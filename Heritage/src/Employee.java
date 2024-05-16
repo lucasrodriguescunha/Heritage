@@ -1,6 +1,6 @@
 // Class Employee
 // Classe Funcionário
-public class Employee {
+public abstract class Employee {
     private String name; // Nome
     private String city; // Cidade
     private String state; // Estado
@@ -54,5 +54,9 @@ public class Employee {
 
     public void setDepartment(Department department) {
         this.department = department;
+    }
+
+    public abstract double calculateSalary() {
+        //
     }
 }
